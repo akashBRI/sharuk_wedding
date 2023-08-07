@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="home page-template page-template-elementor_header_footer page page-id-258 theme-hello-elementor woocommerce-js theplus-preloader elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-258 e--ua-blink e--ua-chrome e--ua-webkit">{children}</body>
     </html>
   )
 }
