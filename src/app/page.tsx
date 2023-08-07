@@ -50,7 +50,7 @@ export default function Home() {
                         </div>
                         <div className="elementor-element elementor-element-193e3b30 elementor-widget elementor-widget-heading" data-id="193e3b30" data-element_type="widget" data-widget_type="heading.default">
                           <div className="elementor-widget-container">
-                            <h4 className="elementor-heading-title elementor-size-default">17 Saptember 2023</h4>		</div>
+                            <h4 className="elementor-heading-title elementor-size-default">17 September 2023</h4>		</div>
                         </div>
                         <div className="elementor-element elementor-element-2d1e1c6d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="2d1e1c6d" data-element_type="widget" data-widget_type="divider.default">
                           <div className="elementor-widget-container">
