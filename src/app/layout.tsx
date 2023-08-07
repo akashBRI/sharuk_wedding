@@ -16,7 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="home page-template page-template-elementor_header_footer page page-id-258 theme-hello-elementor woocommerce-js theplus-preloader elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-258 e--ua-blink e--ua-chrome e--ua-webkit">{children}</body>
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"></link>
+      <body style={{margin:0}}>{children}</body>
     </html>
   )
 }
