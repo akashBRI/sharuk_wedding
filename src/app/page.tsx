@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Invitation from "@/components/invitation";
 import Header from "@/components/header";
 import Stories from "@/components/stories";
@@ -12,6 +12,8 @@ export default function Home() {
     setIsPlaying(!isPlaying);
     // Your audio play/pause logic
   };
+
+
   return (
     <main>
       <header data-elementor-type="header" data-elementor-id="1446" className="elementor elementor-1446 elementor-location-header">

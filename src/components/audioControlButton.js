@@ -11,6 +11,18 @@ const AudioControlButton = ({ isPlaying, onTogglePlay }) => {
     } else {
       audioRef.current.pause();
     }
+
+    const handleScroll = () => {
+      if (!isPlaying) {
+        audioRef.current.play();
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [isPlaying]);
 
 
@@ -45,7 +57,7 @@ const AudioControlButton = ({ isPlaying, onTogglePlay }) => {
           <img src={isPlaying?"./pause.svg":"./play.svg"}/>
           </span>
         </button>
-        <audio ref={audioRef} preload="auto" loop>
+        <audio ref={audioRef} loop >
           <source src="./Haal.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
