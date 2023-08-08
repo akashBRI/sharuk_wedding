@@ -1,6 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 const AudioControlButton = ({ isPlaying, onTogglePlay }) => {
+
+  
+  const audioRef = React.createRef();
+
+  useEffect(() => {
+    if (isPlaying) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+  }, [isPlaying]);
+
+
   return (
     <div className="grid_position__gg+Eo grid_position--bottom-right__2rWHR grid_position--fixed__Uvo5V">
       <div className="grid_space--around-2px__KgnSP">
@@ -9,7 +22,7 @@ const AudioControlButton = ({ isPlaying, onTogglePlay }) => {
           type="button"
           onClick={onTogglePlay}
         >
-          <ul className="loading_music-playing-loader__ru3oV loading_music-playing-loader--play__04l2L">
+          <ul className={isPlaying ? "loading_music-playing-loader__ru3oV loading_music-playing-loader--play__04l2L" : "loading_music-playing-loader__ru3oV"}>
             <li
               className="loading_music-playing-loader__item__5HJYR"
               style={{'--line-index': 1}}
@@ -32,6 +45,10 @@ const AudioControlButton = ({ isPlaying, onTogglePlay }) => {
           <img src={isPlaying?"./pause.svg":"./play.svg"}/>
           </span>
         </button>
+        <audio ref={audioRef} preload="auto" loop>
+          <source src="./Haal.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
       </div>
     </div>
   );

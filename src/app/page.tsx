@@ -1,12 +1,12 @@
 "use client"
 import React, { useState } from 'react';
-import Invitation from "@/components/Invitation";
+import Invitation from "@/components/invitation";
 import Header from "@/components/header";
 import Stories from "@/components/stories";
 import AudioControlButton from "@/components/audioControlButton"
 
 export default function Home() {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
