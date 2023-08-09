@@ -12,17 +12,7 @@ const AudioControlButton = ({ isPlaying, onTogglePlay }) => {
       audioRef.current.pause();
     }
 
-    const handleScroll = () => {
-      if (!isPlaying) {
-        audioRef.current.play();
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+   
   }, [isPlaying]);
 
 

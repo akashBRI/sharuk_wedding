@@ -47,8 +47,7 @@ const Invitation = () => {
                   >
                     <div className="elementor-widget-container">
                       <h4 className="elementor-heading-title elementor-size-default">
-                        PLEASE JOIN US FOR
-                        <br />
+                        JOIN US FOR 
                         THE WEDDING
                       </h4>{" "}
                     </div>
@@ -147,6 +146,13 @@ const Invitation = () => {
                       <h4 className="elementor-heading-title elementor-size-default">
                         Municipal Town Hall, Thalassery
                       </h4>{" "}
+                    </div>
+                    <div className="elementor-widget-container" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                      <img src="./location.svg" style={{height:'16px', paddingRight:'5px'}} />
+                      {" "}
+                      <a href="https://maps.app.goo.gl/uHrfAmyYS4iQgMcK8?g_st=iw" target="_black" rel="noopener noreferrer" style={{fontFamily:'sans-serif', fontWeight:600, color:'#EABF86', paddingTop: '2px'}}>
+                        Get Direction
+                      </a>
                     </div>
                   </div>
                   <div

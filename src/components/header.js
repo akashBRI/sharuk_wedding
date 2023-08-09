@@ -10,7 +10,7 @@ const Header = () => {
         data-settings='{"sticky":"top","background_background":"classic","sticky_effects_offset":145,"sticky_on":["desktop","tablet","mobile"],"sticky_offset":0}'
         style={{
           position: "fixed",
-          width: "343px",
+          width: "100%",
           marginTop: "0px",
           marginBottom: "0px",
           top: "0px",
